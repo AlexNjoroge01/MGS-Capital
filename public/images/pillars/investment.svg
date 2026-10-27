@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" fill="none">
+  <defs>
+    <linearGradient id="inv-a" x1="1200" y1="0" x2="0" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EEF0F0"/>
+      <stop offset="1" stop-color="#D6DADB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#inv-a)"/>
+  <path d="M0 1180 490 900l710 420v180H0Z" fill="#30373A" opacity="0.85"/>
+  <path d="M0 1180 490 900l710 420" stroke="#A8845A" stroke-width="1.4" opacity="0.7"/>
+  <path d="M180 0v1500" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+  <path d="M1020 0v1500" stroke="#FFFFFF" stroke-width="1" opacity="0.5"/>
+  <path d="M0 420h1200" stroke="#8C979D" stroke-width="1" opacity="0.35"/>
+  <path d="M0 760h1200" stroke="#8C979D" stroke-width="1" opacity="0.35"/>
+  <circle cx="880" cy="300" r="170" stroke="#8C979D" stroke-width="1.5" opacity="0.5"/>
+  <circle cx="880" cy="300" r="110" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <g transform="translate(500 1010) scale(1.5)" opacity="0.16">
+    <path d="M16 140V24h28l36 66 36-66h28v116h-26V68l-38 70-38-70v72H16Z" fill="#F7F6F2"/>
+  </g>
+</svg>

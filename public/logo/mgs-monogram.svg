@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" fill="none" role="img" aria-label="MGS Capital monogram">
+  <defs>
+    <linearGradient id="mgs-graphite" x1="20" y1="16" x2="140" y2="148" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#3B4347"/>
+      <stop offset="1" stop-color="#1E2326"/>
+    </linearGradient>
+    <linearGradient id="mgs-silver" x1="26" y1="128" x2="138" y2="34" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#7E898F"/>
+      <stop offset="0.45" stop-color="#C9CED1"/>
+      <stop offset="0.7" stop-color="#E8EAEB"/>
+      <stop offset="1" stop-color="#8C979D"/>
+    </linearGradient>
+  </defs>
+  <path d="M64 78 92 46l18 16-28 32-18-16Z" fill="#A8845A" opacity="0.9"/>
+  <path d="M56 92 78 68l24 22-22 24-24-22Z" fill="#B99A6E" opacity="0.85"/>
+  <path d="M16 140V24h28l36 66 36-66h28v116h-26V68l-38 70-38-70v72H16Z" fill="url(#mgs-graphite)"/>
+  <g transform="rotate(-42 80 80)">
+    <rect x="-32" y="66" width="224" height="28" rx="14" fill="url(#mgs-silver)" opacity="0.96"/>
+  </g>
+</svg>

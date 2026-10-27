@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" fill="none">
+  <defs>
+    <linearGradient id="edu-a" x1="0" y1="0" x2="1200" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F7F6F2"/>
+      <stop offset="1" stop-color="#E4E4DE"/>
+    </linearGradient>
+    <linearGradient id="edu-light" x1="900" y1="0" x2="200" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FFFFFF" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#edu-a)"/>
+  <path d="M760 0h440v1500H760Z" fill="url(#edu-light)"/>
+  <path d="M0 1500 620 0h300L300 1500Z" fill="#C9CED1" opacity="0.4"/>
+  <path d="M0 1500 780 0" stroke="#A8845A" stroke-width="1.2" opacity="0.55"/>
+  <path d="M240 1500 1020 0" stroke="#8C979D" stroke-width="1" opacity="0.45"/>
+  <rect x="120" y="180" width="1" height="1140" fill="#30373A" opacity="0.14"/>
+  <g transform="translate(470 660) scale(1.6)" opacity="0.1">
+    <path d="M16 140V24h28l36 66 36-66h28v116h-26V68l-38 70-38-70v72H16Z" fill="#30373A"/>
+  </g>
+</svg>

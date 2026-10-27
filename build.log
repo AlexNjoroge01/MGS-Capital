@@ -1,0 +1,46 @@
+
+> mgscapital@0.0.1 build X:\Baseline44 Engineering\mgscapital
+> next build
+
+▲ Next.js 16.4.2 (Turbopack)
+✓ Running next.config.ts took 147ms
+
+  Creating an optimized production build ...
+✓ Compiled successfully in 4.5s
+  Running TypeScript ...
+  Finished TypeScript in 20.0s ...
+  Collecting page data using 3 workers ...
+  Generating static pages using 3 workers (0/26) ...
+  Generating static pages using 3 workers (6/26) 
+  Generating static pages using 3 workers (12/26) 
+  Generating static pages using 3 workers (19/26) 
+✓ Generating static pages using 3 workers (26/26) in 4.8s
+  Finalizing page optimization ...
+
+Route (app)
+┌ ○ /
+├ ○ /_not-found
+├ ○ /about
+├ ○ /apple-icon
+├ ○ /contact
+├ ○ /disclosures
+├ ○ /icon.svg
+├ ○ /manifest.webmanifest
+├ ○ /opengraph-image
+├ ○ /privacy
+├ ○ /robots.txt
+├ ○ /services
+├   /services/[slug]
+│ ├ ● /services/medical-insurance
+│ ├ ● /services/general-insurance
+│ ├ ● /services/insurance-premium-financing
+│ └ ● [+8 more paths]
+├ ƒ /services/[slug]/opengraph-image
+├ ○ /sitemap.xml
+└ ○ /terms
+
+
+○  (Static)   prerendered as static content
+●  (SSG)      prerendered as static HTML (uses generateStaticParams)
+ƒ  (Dynamic)  server-rendered on demand
+

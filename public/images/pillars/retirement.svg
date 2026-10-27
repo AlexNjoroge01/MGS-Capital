@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" fill="none">
+  <defs>
+    <linearGradient id="ret-a" x1="0" y1="0" x2="0" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#FAF9F5"/>
+      <stop offset="1" stop-color="#EDEBE4"/>
+    </linearGradient>
+    <linearGradient id="ret-arc" x1="300" y1="1200" x2="900" y2="300" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#C9CED1"/>
+      <stop offset="1" stop-color="#8C979D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#ret-a)"/>
+  <path d="M300 1500V820c0-290 240-420 300-420s300 130 300 420v680" stroke="url(#ret-arc)" stroke-width="2" opacity="0.65"/>
+  <path d="M420 1500V860c0-190 160-280 180-280s180 90 180 280v640" fill="#E8EAEB" opacity="0.75"/>
+  <line x1="0" y1="1120" x2="1200" y2="1120" stroke="#A8845A" stroke-width="1.2" opacity="0.6"/>
+  <line x1="0" y1="620" x2="1200" y2="620" stroke="#30373A" stroke-width="1" opacity="0.12"/>
+  <circle cx="600" cy="580" r="6" fill="#A8845A" opacity="0.8"/>
+  <g transform="translate(470 900) scale(1.55)" opacity="0.1">
+    <path d="M16 140V24h28l36 66 36-66h28v116h-26V68l-38 70-38-70v72H16Z" fill="#30373A"/>
+  </g>
+</svg>

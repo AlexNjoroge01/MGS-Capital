@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" fill="none">
+  <defs>
+    <linearGradient id="ent-a" x1="0" y1="0" x2="1200" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#30373A"/>
+      <stop offset="1" stop-color="#1E2326"/>
+    </linearGradient>
+    <linearGradient id="ent-ribbon" x1="200" y1="1300" x2="1000" y2="200" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C979D"/>
+      <stop offset="0.5" stop-color="#C9CED1"/>
+      <stop offset="1" stop-color="#7E898F"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#ent-a)"/>
+  <path d="M0 1040 1200 540v260L0 1300Z" fill="#8C979D" opacity="0.12"/>
+  <path d="M200 1500V420h420v1080" stroke="#C9CED1" stroke-width="1" opacity="0.35"/>
+  <path d="M620 1500V700h380v800" stroke="#A8845A" stroke-width="1.4" opacity="0.55"/>
+  <g transform="rotate(-40 600 780)">
+    <rect x="120" y="740" width="960" height="52" fill="url(#ent-ribbon)" opacity="0.55"/>
+  </g>
+  <g transform="translate(470 620) scale(1.6)" opacity="0.1">
+    <path d="M16 140V24h28l36 66 36-66h28v116h-26V68l-38 70-38-70v72H16Z" fill="#FFFFFF"/>
+  </g>
+</svg>

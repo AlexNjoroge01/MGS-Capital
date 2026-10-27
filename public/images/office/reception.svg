@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" fill="none">
+  <defs>
+    <linearGradient id="office-a" x1="0" y1="0" x2="1200" y2="900" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#EDEEEA"/>
+      <stop offset="1" stop-color="#D3D6D3"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="900" fill="url(#office-a)"/>
+  <path d="M0 900V360h1200v540" fill="#C9CED1" opacity="0.35"/>
+  <g stroke="#30373A" stroke-width="1" opacity="0.22">
+    <path d="M140 900V240M320 900V240M500 900V240M680 900V240M860 900V240M1040 900V240"/>
+    <path d="M80 340h1040M80 520h1040M80 700h1040"/>
+  </g>
+  <path d="M0 900 1200 300" stroke="#A8845A" stroke-width="1.4" opacity="0.55"/>
+  <path d="M0 820 1200 220" stroke="#FFFFFF" stroke-width="1" opacity="0.6"/>
+  <g transform="translate(500 390) scale(1.3)" opacity="0.12">
+    <path d="M16 140V24h28l36 66 36-66h28v116h-26V68l-38 70-38-70v72H16Z" fill="#30373A"/>
+  </g>
+</svg>

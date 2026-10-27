@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 1500" fill="none">
+  <defs>
+    <linearGradient id="ins-a" x1="0" y1="0" x2="1200" y2="1500" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F1F1ED"/>
+      <stop offset="1" stop-color="#DDE0DD"/>
+    </linearGradient>
+    <linearGradient id="ins-ribbon" x1="260" y1="1180" x2="980" y2="320" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#8C979D"/>
+      <stop offset="0.5" stop-color="#E8EAEB"/>
+      <stop offset="1" stop-color="#A9B1B4"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="1500" fill="url(#ins-a)"/>
+  <path d="M0 1040 1200 640v300L0 1300Z" fill="#C9CED1" opacity="0.55"/>
+  <path d="M120 0h360v1500H120Z" fill="#30373A" opacity="0.06"/>
+  <circle cx="840" cy="520" r="300" stroke="#A8845A" stroke-width="1.5" opacity="0.55"/>
+  <g transform="rotate(-38 600 750)">
+    <rect x="190" y="706" width="820" height="88" fill="url(#ins-ribbon)" opacity="0.9"/>
+  </g>
+  <path d="M0 1500V0h1200" stroke="#30373A" stroke-width="1" opacity="0.18"/>
+  <g transform="translate(470 610) scale(1.6)" opacity="0.12">
+    <path d="M16 140V24h28l36 66 36-66h28v116h-26V68l-38 70-38-70v72H16Z" fill="#30373A"/>
+  </g>
+</svg>
