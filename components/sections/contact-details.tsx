@@ -1,6 +1,5 @@
 "use client"
 
-import { useState } from "react"
 import { Copy, ExternalLink, Mail, MapPin, MessageCircle, Phone } from "lucide-react"
 import { toast } from "sonner"
 
@@ -28,7 +27,7 @@ function CopyButton({ value, label }: { value: string; label: string }) {
               }
             }}
             aria-label={`Copy ${label.toLowerCase()}`}
-            className="inline-flex size-9 items-center justify-center border border-silver-light text-silver transition-colors hover:border-bronze-deep hover:text-bronze-deep"
+            className="inline-flex size-11 items-center justify-center border border-silver-light text-silver transition-colors hover:border-bronze-deep hover:text-bronze-deep"
           >
             <Copy className="size-3.5" strokeWidth={1.25} aria-hidden />
           </button>

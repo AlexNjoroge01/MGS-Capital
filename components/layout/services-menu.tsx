@@ -17,7 +17,7 @@ import { cn } from "@/lib/utils"
 
 export function ServicesMenu({ onNavigate }: { onNavigate?: () => void }) {
   return (
-    <NavigationMenu viewport={false} className="max-w-none">
+    <NavigationMenu className="max-w-none">
       <NavigationMenuList>
         <NavigationMenuItem>
           <NavigationMenuTrigger
@@ -26,7 +26,10 @@ export function ServicesMenu({ onNavigate }: { onNavigate?: () => void }) {
           >
             Services
           </NavigationMenuTrigger>
-          <NavigationMenuContent className="w-[min(92vw,760px)] rounded-none border border-silver-light bg-white p-0 shadow-[0_30px_80px_-50px_rgba(30,35,38,0.45)]">
+          <NavigationMenuContent
+            style={{ width: "min(92vw, 760px)" }}
+            className="rounded-none border border-silver-light bg-white p-0 shadow-[0_30px_80px_-50px_rgba(30,35,38,0.45)]"
+          >
             <div className="grid grid-cols-2 gap-x-10 gap-y-9 p-9">
               {pillars.map((pillar) => {
                 const services = getServicesByPillar(pillar.slug)
@@ -81,12 +84,6 @@ export function ServicesMenu({ onNavigate }: { onNavigate?: () => void }) {
 
 export function DesktopNav({ className }: { className?: string }) {
   const pathname = usePathname()
-
-  const links = [
-    { label: "Home", href: "/" },
-    { label: "About", href: "/about" },
-    { label: "Contact", href: "/contact" },
-  ]
 
   const isActive = (href: string) =>
     href === "/" ? pathname === "/" : pathname.startsWith(href)

@@ -95,11 +95,19 @@ function Carousel({
 
   React.useEffect(() => {
     if (!api) return
-    onSelect(api)
+
+    // Defer the first sync so it does not set state synchronously inside this
+    // effect (React Compiler / eslint react-hooks rule).
+    let cancelled = false
+    queueMicrotask(() => {
+      if (!cancelled) onSelect(api)
+    })
+
     api.on("reInit", onSelect)
     api.on("select", onSelect)
 
     return () => {
+      cancelled = true
       api?.off("select", onSelect)
     }
   }, [api, onSelect])

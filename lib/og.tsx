@@ -11,10 +11,10 @@ const displayFont = await readFile(
   join(process.cwd(), "assets/fonts/CormorantGaramond-Light.woff")
 )
 const uiFont = await readFile(join(process.cwd(), "assets/fonts/Jost-Regular.woff"))
-const monogramSvg = await readFile(
-  join(process.cwd(), "public/logo/mgs-monogram.svg")
+const monogramPng = await readFile(
+  join(process.cwd(), "public/logo/mgs-monogram.png")
 )
-const monogram = `data:image/svg+xml;base64,${monogramSvg.toString("base64")}`
+const monogram = `data:image/png;base64,${monogramPng.toString("base64")}`
 
 export function renderOgImage({ eyebrow, title }: OgOptions) {
   return new ImageResponse(

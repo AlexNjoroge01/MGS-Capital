@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react"
 import { useSearchParams } from "next/navigation"
-import { useForm } from "react-hook-form"
+import { useForm, useWatch } from "react-hook-form"
 import { zodResolver } from "@hookform/resolvers/zod"
 import { ArrowUpRight, Check } from "lucide-react"
 import { toast } from "sonner"
@@ -40,9 +40,9 @@ export function EnquiryComposer() {
   } | null>(null)
 
   const {
+    control,
     register,
     handleSubmit,
-    watch,
     setValue,
     formState: { errors, isSubmitting },
   } = useForm<EnquiryValues>({
@@ -63,9 +63,19 @@ export function EnquiryComposer() {
     }
   }, [requested, setValue])
 
-  const channel = watch("channel")
-  const consent = watch("consent")
-  const service = watch("service")
+  // useWatch keeps the React Compiler able to memoise this component; the
+  // `watch()` helper returned by useForm cannot be memoised safely.
+  const channel = useWatch({
+    control,
+    name: "channel",
+    defaultValue: "whatsapp",
+  })
+  const consent = useWatch({ control, name: "consent", defaultValue: false })
+  const service = useWatch({
+    control,
+    name: "service",
+    defaultValue: initialService as EnquiryValues["service"],
+  })
 
   const onSubmit = (values: EnquiryValues) => {
     const href = buildEnquiryLinks({
@@ -89,7 +99,7 @@ export function EnquiryComposer() {
       window.open(href, "_blank", "noopener,noreferrer")
     } else {
       toast.success("Opening your email app…")
-      window.location.href = href
+      window.location.assign(href)
     }
   }
 

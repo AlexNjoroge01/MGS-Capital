@@ -1,6 +1,6 @@
 "use client"
 
-import { useState } from "react"
+import { useEffect, useState } from "react"
 import Link from "next/link"
 import { usePathname } from "next/navigation"
 import { Menu, Phone } from "lucide-react"
@@ -11,12 +11,18 @@ import { MobileNav } from "@/components/layout/mobile-nav"
 import { Button } from "@/components/ui/button"
 import { siteConfig } from "@/lib/site-config"
 import { cn } from "@/lib/utils"
-import { useEffect } from "react"
 
 export function SiteHeader() {
   const [scrolled, setScrolled] = useState(false)
-  const [open, setOpen] = useState(false)
+  /**
+   * The mobile sheet records which route it was opened on, so a client-side
+   * navigation closes it without an effect that calls setState.
+   */
+  const [openForPath, setOpenForPath] = useState<string | null>(null)
   const pathname = usePathname()
+  const open = openForPath === pathname
+
+  const setOpen = (next: boolean) => setOpenForPath(next ? pathname : null)
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 24)
@@ -24,10 +30,6 @@ export function SiteHeader() {
     window.addEventListener("scroll", onScroll, { passive: true })
     return () => window.removeEventListener("scroll", onScroll)
   }, [])
-
-  useEffect(() => {
-    setOpen(false)
-  }, [pathname])
 
   return (
     <>
