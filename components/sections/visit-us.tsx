@@ -1,4 +1,3 @@
-import Image from "next/image"
 import Link from "next/link"
 import { ArrowUpRight, MapPin, Phone } from "lucide-react"
 
@@ -9,8 +8,8 @@ import { siteConfig, whatsappLink } from "@/lib/site-config"
 export function VisitUs() {
   return (
     <section className="section surface-ivory">
-      <div className="shell grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
-        <div className="lg:col-span-5">
+      <div className="shell grid gap-12 lg:grid-cols-12 lg:items-start lg:gap-16">
+        <div className="lg:col-span-6">
           <Reveal>
             <Eyebrow className="mb-6">Visit us</Eyebrow>
           </Reveal>
@@ -27,9 +26,11 @@ export function VisitUs() {
               arranged.
             </p>
           </Reveal>
+        </div>
 
+        <div className="lg:col-span-5 lg:col-start-8 lg:pt-14">
           <Reveal delay={0.15}>
-            <div className="mt-9 space-y-5 border-t border-silver-light pt-7">
+            <div className="space-y-5 border-t border-silver-light pt-7">
               <p className="flex gap-4 text-[0.9375rem] leading-relaxed font-light text-graphite">
                 <MapPin
                   className="mt-1 size-4 shrink-0 text-bronze-deep"
@@ -91,19 +92,6 @@ export function VisitUs() {
             </div>
           </Reveal>
         </div>
-
-        <Reveal className="lg:col-span-6 lg:col-start-7" delay={0.1}>
-          <div className="relative aspect-[4/3] overflow-hidden bg-stone/20">
-            <Image
-              src="/images/office/reception.svg"
-              alt="Abstract architectural composition of the office building in stone and graphite tones"
-              fill
-              sizes="(min-width: 1024px) 46vw, 100vw"
-              unoptimized
-              className="object-cover"
-            />
-          </div>
-        </Reveal>
       </div>
     </section>
   )

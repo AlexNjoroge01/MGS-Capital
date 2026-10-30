@@ -1,7 +1,6 @@
 import Link from "next/link"
 
-import { Logo } from "@/components/shared/logo"
-import { MonogramWatermark } from "@/components/shared/monogram-watermark"
+
 import { pillars } from "@/lib/pillars"
 import { getServicesByPillar } from "@/lib/services"
 import { siteConfig } from "@/lib/site-config"
@@ -21,16 +20,12 @@ export function SiteFooter() {
 
   return (
     <footer className="surface-deep relative overflow-hidden">
-      <MonogramWatermark
-        variant="white"
-        className="-top-24 -right-16 h-[420px] w-[420px] lg:h-[560px] lg:w-[560px]"
-      />
+      
 
       <div className="shell relative pt-20 pb-10 lg:pt-28">
         <div className="grid gap-14 lg:grid-cols-12 lg:gap-10">
           <div className="lg:col-span-4">
-            <Logo variant="white" />
-            <p className="mt-8 max-w-xs font-display text-[1.5rem] leading-snug font-light text-white/90 italic">
+            <p className="max-w-xs font-display text-[1.5rem] leading-snug font-light text-white/90 italic">
               {siteConfig.tagline}
             </p>
             <p className="mt-5 max-w-xs text-[0.875rem] leading-relaxed font-light text-silver-light">

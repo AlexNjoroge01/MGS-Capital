@@ -1,6 +1,3 @@
-"use client"
-
-import { useState } from "react"
 import Link from "next/link"
 import Image from "next/image"
 import { ArrowUpRight } from "lucide-react"
@@ -11,11 +8,8 @@ import { Button } from "@/components/ui/button"
 import { buttonStyles } from "@/components/shared/button-styles"
 import { pillars } from "@/lib/pillars"
 import { getServicesByPillar } from "@/lib/services"
-import { cn } from "@/lib/utils"
 
 export function PillarsSection() {
-  const [active, setActive] = useState<string | null>(null)
-
   return (
     <section className="section bg-white">
       <div className="shell">
@@ -53,11 +47,7 @@ export function PillarsSection() {
 
             return (
               <Reveal key={pillar.slug} delay={index * 0.04}>
-                <div
-                  onMouseEnter={() => setActive(pillar.slug)}
-                  onMouseLeave={() => setActive(null)}
-                  className="group border-b border-silver-light py-10 lg:py-12"
-                >
+                <div className="group border-b border-silver-light py-10 lg:py-12">
                   <div className="grid gap-7 lg:grid-cols-12 lg:gap-8">
                     <div className="lg:col-span-2">
                       <span className="numeral block">{pillar.number}</span>
@@ -98,28 +88,10 @@ export function PillarsSection() {
                           alt={pillar.image.alt}
                           fill
                           sizes="(min-width: 1024px) 30vw, 100vw"
-                          unoptimized
-                          className={cn(
-                            "object-cover transition-all duration-[900ms] ease-out",
-                            "opacity-100 lg:opacity-0 lg:group-hover:scale-[1.02] lg:group-hover:opacity-100"
-                          )}
+                          className="object-cover transition-transform duration-[900ms] ease-out group-hover:scale-[1.03]"
                         />
-                        <span
-                          className={cn(
-                            "absolute inset-0 hidden items-center justify-between border border-silver-light px-5 lg:flex",
-                            "transition-opacity duration-500 lg:group-hover:opacity-0"
-                          )}
-                        >
-                          <span className="text-[0.625rem] tracking-[0.2em] text-ink-muted uppercase">
-                            View pillar
-                          </span>
-                          <ArrowUpRight
-                            className={cn(
-                              "size-5 text-silver transition-all duration-500",
-                              active === pillar.slug && "-translate-y-1 translate-x-1"
-                            )}
-                            strokeWidth={1}
-                          />
+                        <span className="absolute right-4 bottom-4 flex size-9 items-center justify-center bg-white/85 text-graphite transition-colors duration-500 group-hover:bg-bronze-deep group-hover:text-white">
+                          <ArrowUpRight className="size-4" strokeWidth={1.25} />
                         </span>
                       </Link>
                     </div>

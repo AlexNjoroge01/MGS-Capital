@@ -101,9 +101,9 @@ export default function AboutPage() {
         <div className="shell grid gap-12 lg:grid-cols-12 lg:items-center lg:gap-16">
           <Reveal className="lg:col-span-5">
             <FramedImage
-              src="/images/about/lizzie.svg"
-              alt="Abstract graphite, silver, and bronze composition in the MGS Capital palette"
-              aspect="tall"
+              src="/lizzie.png"
+              alt="Lizzie Gitiche, founder of MGS Capital"
+              aspect="square"
               offset
               sizes="(min-width: 1024px) 38vw, 100vw"
             />

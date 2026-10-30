@@ -2,7 +2,7 @@ import Link from "next/link"
 
 import { CtaBand } from "@/components/sections/cta-band"
 import { Eyebrow } from "@/components/shared/eyebrow"
-import { MonogramWatermark } from "@/components/shared/monogram-watermark"
+
 import { Button } from "@/components/ui/button"
 import { buttonStyles } from "@/components/shared/button-styles"
 import { pillars } from "@/lib/pillars"
@@ -12,7 +12,7 @@ export default function NotFound() {
   return (
     <>
       <section className="relative flex min-h-[80svh] items-center overflow-hidden bg-white pt-32 pb-20">
-        <MonogramWatermark className="-right-24 -bottom-24 h-[480px] w-[480px]" />
+       
         <div className="shell relative grid gap-10 lg:grid-cols-12">
           <div className="lg:col-span-8">
             <Eyebrow className="mb-7">404</Eyebrow>

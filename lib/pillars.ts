@@ -29,8 +29,8 @@ export const pillars: Pillar[] = [
       "insurance-premium-financing",
     ],
     image: {
-      src: "/images/pillars/insurance.svg",
-      alt: "Abstract composition of layered silver and bronze planes",
+      src: "/insurance.png",
+      alt: "An insurance sign against the glass frontage of a city office building",
     },
   },
   {
@@ -46,8 +46,8 @@ export const pillars: Pillar[] = [
       "nssf-tier-2",
     ],
     image: {
-      src: "/images/pillars/retirement.svg",
-      alt: "Abstract calmer composition in warm ivory and graphite",
+      src: "/retirement.png",
+      alt: "A coin being dropped into a jar labelled Retirement beside a stack of coins and an alarm clock",
     },
   },
   {
@@ -59,8 +59,8 @@ export const pillars: Pillar[] = [
       "Advice on using money market funds for money you may need soon, with costs, access, and risk shown plainly.",
     serviceSlugs: ["money-market-fund-advisory"],
     image: {
-      src: "/images/pillars/investment.svg",
-      alt: "Abstract graphite and silver geometry suggesting structure",
+      src: "/investment.png",
+      alt: "Stacks of coins rising like growing trees as a hand adds another coin",
     },
   },
   {
@@ -72,8 +72,8 @@ export const pillars: Pillar[] = [
       "Financing support for Kenyan students admitted to institutions abroad, and for the parents or sponsors behind them.",
     serviceSlugs: ["study-abroad-loans"],
     image: {
-      src: "/images/pillars/education.svg",
-      alt: "Abstract light-filled composition in stone and silver",
+      src: "/education.png",
+      alt: "A graduation cap resting on stacked books with a rolled diploma",
     },
   },
   {
@@ -89,8 +89,8 @@ export const pillars: Pillar[] = [
       "fundraising-for-lending-companies",
     ],
     image: {
-      src: "/images/pillars/enterprise.svg",
-      alt: "Abstract architectural forms in graphite and bronze",
+      src: "/enterprise.png",
+      alt: "Interlocking gears representing business finance, trade, and venture capital",
     },
   },
 ]

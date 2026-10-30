@@ -4,7 +4,6 @@ import { Phone } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { buttonStyles } from "@/components/shared/button-styles"
-import { FramedImage } from "@/components/shared/framed-image"
 import { Eyebrow } from "@/components/shared/eyebrow"
 import { Reveal } from "@/components/shared/reveal"
 import { getPillar } from "@/lib/pillars"
@@ -17,8 +16,8 @@ export function ServiceHero({ service }: { service: Service }) {
 
   return (
     <section className="relative overflow-hidden bg-white pt-8 pb-14 lg:pt-10 lg:pb-20">
-      <div className="shell grid gap-12 lg:grid-cols-12 lg:gap-14">
-        <div className="lg:col-span-7">
+      <div className="shell">
+        <div className="max-w-3xl">
           <Reveal>
             <Eyebrow className="mb-7">
               {pillar?.number} · {pillar?.name}
@@ -63,17 +62,6 @@ export function ServiceHero({ service }: { service: Service }) {
             </div>
           </Reveal>
         </div>
-
-        <Reveal className="lg:col-span-5" delay={0.1}>
-          <FramedImage
-            src={service.image.src}
-            alt={service.image.alt}
-            aspect="portrait"
-            priority
-            offset
-            sizes="(min-width: 1024px) 38vw, 100vw"
-          />
-        </Reveal>
       </div>
 
       {service.audienceNote && (

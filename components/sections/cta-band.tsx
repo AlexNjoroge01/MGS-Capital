@@ -1,6 +1,6 @@
 import { Mail, MessageCircle, Phone } from "lucide-react"
 
-import { MonogramWatermark } from "@/components/shared/monogram-watermark"
+
 import { Reveal } from "@/components/shared/reveal"
 import { Eyebrow } from "@/components/shared/eyebrow"
 import { siteConfig, whatsappLink } from "@/lib/site-config"
@@ -22,10 +22,7 @@ export function CtaBand({
 }: CtaBandProps) {
   return (
     <section className="surface-deep relative overflow-hidden">
-      <MonogramWatermark
-        variant="white"
-        className="-top-20 -right-10 h-[360px] w-[360px] lg:h-[500px] lg:w-[500px]"
-      />
+      
       <div className="shell relative py-20 lg:py-28">
         <Reveal>
           <Eyebrow className="mb-6 text-silver">{eyebrow}</Eyebrow>

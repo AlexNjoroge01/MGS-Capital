@@ -64,7 +64,6 @@ export type Service = {
   faqs: Faq[]
   related: string[]
   disclosure: string
-  image: { src: string; alt: string }
   seo: { title: string; description: string; keywords: string[] }
   reviewedDate: string
   /** Visible near the top of the page where the blueprint requires it. */
@@ -233,10 +232,6 @@ export const services: Service[] = [
     ],
     related: ["general-insurance", "insurance-premium-financing"],
     disclosure: disclosures.medical,
-    image: {
-      src: "/images/pillars/insurance.svg",
-      alt: "Abstract composition of layered silver and bronze planes",
-    },
     seo: {
       title: "Medical Insurance in Kenya | MGS Capital",
       description:
@@ -419,10 +414,6 @@ export const services: Service[] = [
     ],
     related: ["insurance-premium-financing", "medical-insurance"],
     disclosure: disclosures.generalInsurance,
-    image: {
-      src: "/images/pillars/insurance.svg",
-      alt: "Abstract composition of layered silver and bronze planes",
-    },
     seo: {
       title: "General Insurance in Kenya | MGS Capital",
       description:
@@ -599,10 +590,6 @@ export const services: Service[] = [
     ],
     related: ["general-insurance", "medical-insurance"],
     disclosure: disclosures.premiumFinancing,
-    image: {
-      src: "/images/pillars/insurance.svg",
-      alt: "Abstract composition of layered silver and bronze planes",
-    },
     seo: {
       title: "Insurance Premium Financing in Kenya | MGS Capital",
       description:
@@ -767,10 +754,6 @@ export const services: Service[] = [
     ],
     related: ["pension-consolidation", "nssf-tier-2"],
     disclosure: disclosures.retirement,
-    image: {
-      src: "/images/pillars/retirement.svg",
-      alt: "Abstract calmer composition in warm ivory and graphite",
-    },
     seo: {
       title: "Retirement Plan Advisory in Kenya | MGS Capital",
       description:
@@ -925,10 +908,6 @@ export const services: Service[] = [
     ],
     related: ["retirement-plan-advisory", "money-market-fund-advisory"],
     disclosure: disclosures.consolidation,
-    image: {
-      src: "/images/pillars/retirement.svg",
-      alt: "Abstract calmer composition in warm ivory and graphite",
-    },
     seo: {
       title: "Pension Consolidation in Kenya | MGS Capital",
       description:
@@ -1093,10 +1072,6 @@ export const services: Service[] = [
     ],
     related: ["retirement-plan-advisory", "pension-consolidation"],
     disclosure: disclosures.nssf,
-    image: {
-      src: "/images/pillars/retirement.svg",
-      alt: "Abstract calmer composition in warm ivory and graphite",
-    },
     seo: {
       title: "NSSF Tier 2 Advisory in Kenya | MGS Capital",
       description:
@@ -1276,10 +1251,6 @@ export const services: Service[] = [
     ],
     related: ["retirement-plan-advisory", "pension-consolidation"],
     disclosure: disclosures.moneyMarket,
-    image: {
-      src: "/images/pillars/investment.svg",
-      alt: "Abstract graphite and silver geometry suggesting structure",
-    },
     seo: {
       title: "Money Market Fund Advisory in Kenya | MGS Capital",
       description:
@@ -1430,10 +1401,6 @@ export const services: Service[] = [
     ],
     related: ["money-market-fund-advisory", "medical-insurance"],
     disclosure: disclosures.studyAbroad,
-    image: {
-      src: "/images/pillars/education.svg",
-      alt: "Abstract light-filled composition in stone and silver",
-    },
     seo: {
       title: "Study Abroad Loans in Kenya | MGS Capital",
       description:
@@ -1594,10 +1561,6 @@ export const services: Service[] = [
     ],
     related: ["bid-bonds", "general-insurance"],
     disclosure: disclosures.tradeFinance,
-    image: {
-      src: "/images/pillars/enterprise.svg",
-      alt: "Abstract architectural forms in graphite and bronze",
-    },
     seo: {
       title: "Trade Finance Solutions in Kenya | MGS Capital",
       description:
@@ -1749,10 +1712,6 @@ export const services: Service[] = [
     ],
     related: ["trade-finance-solution", "general-insurance"],
     disclosure: disclosures.bidBonds,
-    image: {
-      src: "/images/pillars/enterprise.svg",
-      alt: "Abstract architectural forms in graphite and bronze",
-    },
     seo: {
       title: "Bid Bonds in Kenya | MGS Capital",
       description:
@@ -1915,10 +1874,6 @@ export const services: Service[] = [
     ],
     related: ["trade-finance-solution", "money-market-fund-advisory"],
     disclosure: disclosures.fundraising,
-    image: {
-      src: "/images/pillars/enterprise.svg",
-      alt: "Abstract architectural forms in graphite and bronze",
-    },
     seo: {
       title: "Fundraising for Lending Companies in Kenya | MGS Capital",
       description:
